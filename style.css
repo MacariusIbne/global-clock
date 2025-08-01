@@ -1,0 +1,301 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  transition: background 0.4s, color 0.4s;
+}
+
+body.light {
+  background: #ffffff;
+  color: #000000;
+}
+
+body.dark {
+  background: #121212;
+  color: #ffffff;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.clock-display {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  width: 250px;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  box-sizing: border-box;
+}
+
+.menu h2 {
+  margin-bottom: 0.5rem;
+}
+
+.menu select,
+.menu input[type="time"],
+.menu button {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+body.light .menu {
+  background-color: #f4f4f4;
+}
+
+body.dark .menu {
+  background-color: #1e1e1e;
+}
+
+.clock-display {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#clock {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.alarm-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+button {
+  padding: 6px 12px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+body.dark button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+}
+body.light button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+body.dark button:hover {
+  background-color: #555;
+}
+body.light button:hover {
+  background-color: #0056b3;
+}
+body.dark .alarm-buttons button {
+  background-color: #444;
+  color: #fff;
+}
+body.light .alarm-buttons button {
+  background-color: #007bff;
+  color: #fff;
+}
+body.dark .alarm-buttons button:hover {
+  background-color: #666;
+}
+body.light .alarm-buttons button:hover {
+  background-color: #0056b3;
+}
+body.dark .alarm-buttons button:disabled {
+  background-color: #555;
+  color: #888;
+}
+body.light .alarm-buttons button:disabled {
+  background-color: #007bff;
+  color: #ccc;
+}
+body.dark .alarm-buttons button:disabled:hover {
+  background-color: #555;
+}
+body.light .alarm-buttons button:disabled:hover {
+  background-color: #007bff;
+}
+body.dark .alarm-buttons button:active {
+  background-color: #333;
+}
+body.light .alarm-buttons button:active {
+  background-color: #0056b3;
+}
+body.dark .alarm-buttons button:active:hover {
+  background-color: #444;
+}
+body.light .alarm-buttons button:active:hover {
+  background-color: #0069d9;
+}
+body.dark .alarm-buttons button:focus {
+  outline: 2px solid #555;
+}
+body.light .alarm-buttons button:focus {
+  outline: 2px solid #007bff;
+}
+body.dark .alarm-buttons button:focus:hover {
+  background-color: #666;
+}
+
+body.light .alarm-buttons button:focus:hover {
+  background-color: #0056b3;
+}
+body.dark .alarm-buttons button:focus:active {
+  background-color: #444;
+}
+body.light .alarm-buttons button:focus:active {
+  background-color: #0069d9;
+}
+body.dark .alarm-buttons button:focus:active:hover {
+  background-color: #555;
+}
+body.light .alarm-buttons button:focus:active:hover {
+  background-color: #0056b3;
+}
+body.dark .alarm-buttons button:focus:disabled {
+  background-color: #555;
+  color: #888;
+}
+body.light .alarm-buttons button:focus:disabled {
+  background-color: #007bff;
+  color: #ccc;
+}
+body.dark .alarm-buttons button:focus:disabled:hover {
+  background-color: #555;
+}
+body.light .alarm-buttons button:focus:disabled:hover {
+  background-color: #007bff;
+}
+body.dark .menu select {
+  background-color: #2a2a2a;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+body.light .menu select {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+}
+body.dark .menu select:hover {
+  background-color: #333;
+}
+body.light .menu select:hover {
+  background-color: #f0f0f0;
+}
+body.dark .menu select:focus {
+  outline: 2px solid #555;
+}
+body.light .menu select:focus {
+  outline: 2px solid #007bff;
+}
+body.dark .menu select:focus:hover {
+  background-color: #444;
+}
+body.light .menu select:focus:hover {
+  background-color: #e0e0e0;
+}
+body.dark .menu {
+  background-color: #222;
+  color: #fff;
+}
+
+body.dark .menu select,
+body.dark .menu input[type="time"],
+body.dark .menu button {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+body.light .menu {
+  background-color: #f4f4f4;
+  color: #000;
+}
+body.light .menu select,
+body.light .menu input[type="time"],
+body.light .menu button {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+}
+body.dark .menu select:hover,
+body.dark .menu input[type="time"]:hover,
+body.dark .menu button:hover {
+  background-color: #444;
+}
+body.light .menu select:hover,
+body.light .menu input[type="time"]:hover,
+body.light .menu button:hover {
+  background-color: #f0f0f0;
+}
+body.dark .menu select:focus,
+body.dark .menu input[type="time"]:focus,
+body.dark .menu button:focus {
+  outline: 2px solid #555;
+}
+.alarm-buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.alarm-buttons button {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: yellow 1px solid transparent;
+  border-radius: 4px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.alarm-buttons button:hover {
+  background-color: #45a049;
+}
+.alarm-buttons button:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+body.dark .alarm-buttons button {
+  background-color: #555;
+  color: #fff;
+}
+body.light .alarm-buttons button {
+  background-color: #4caf50;
+  color: white;
+}
+body.dark .alarm-buttons button:hover {
+  background-color: #666;
+}
+body.light .alarm-buttons button:hover {
+  background-color: #45a049;
+}
+body.dark .alarm-buttons button:disabled {
+  background-color: #444;
+  color: #888;
+}
+body.light .alarm-buttons button:disabled {
+  background-color: #ccc;
+  color: #666;
+}
+body.dark .alarm-buttons button:active {
+  background-color: #444;
+}
+body.light .alarm-buttons button:active {
+  background-color: #45a049;
+}
+body.dark .alarm-buttons button:focus {
+  outline: 2px solid #666;
+}

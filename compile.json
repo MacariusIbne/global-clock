@@ -1,0 +1,24 @@
+{
+  "frontend": {
+    "input": [
+      "index.html",
+      "style.css",
+      "script.js",
+      "vibrate.js",
+        "server.js"
+    ],
+    "output": "dist/",
+    "minify": false,
+    "concat": false
+  },
+  "data": {
+    "input": [
+      "history.json",
+      "timezones.json",
+      "compile.json"
+    ],
+    "output": "dist/data/",
+    "minify": true,
+    "concat": true
+  }
+}

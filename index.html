@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clock</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="menu">
+      <h2>Time Zone</h2>
+      <select id="timezone-selector"></select>
+
+      <h2>Set Alarm</h2>
+      <input type="time" id="alarm-time"/>
+      <div class="alarm-buttons">
+        <button onclick="setAlarm()">Set Alarm</button>
+        <button onclick="snoozeAlarm()">Snooze</button>
+      </div>
+      <div id="alarm-status"></div>
+
+      <h2>Theme</h2>
+      <button onclick="toggleMode()">Toggle Dark/Light</button>
+    </aside>
+
+    <main class="clock-display">
+      <h1 id="region-label">Local Time</h1>
+      <div id="clock"></div>
+      <div class="alarm-buttons">
+  <button onclick="resetAlarm()">Reset</button> <!-- 🔁 Reset button -->
+</div>
+        <div id="alarm-status"></div>
+        <button onclick="triggerVibration()">Trigger Vibration</button>
+    </main>
+  </div>
+
+  <script src="vibrate.js"></script>
+  <script src="script.js"></script>
+  <script src="server.js"></script>
+</body>
+</html>
